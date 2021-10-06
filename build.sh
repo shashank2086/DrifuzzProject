@@ -12,7 +12,7 @@ xz-utils protobuf-compiler python3-dev python3-pip kmod \
 libprotobuf-c-dev libprotoc-dev python3-protobuf g++-8 \
 pkg-config libwiretap-dev libwireshark-dev wget curl \
 zip protobuf-c-compiler automake software-properties-common \
-libz3-dev
+libz3-dev libglib2.0-dev
 
 pip3 install sysv_ipc lz4 mmh3 psutil shortuuid tempdir pexpect intervaltree
 
