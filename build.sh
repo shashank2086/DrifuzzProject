@@ -26,7 +26,7 @@ git clone --branch dev --depth 1 https://github.com/buszk/Drifuzz.git ${REPO}/Dr
 # Build panda fork
 git clone --branch merge --depth 1 https://github.com/buszk/panda.git ${REPO}/panda
 (cd ${REPO}/panda && \
-    drifuzz/scripts/generate_filter_pc.py ${REPO}/Drifuzz/linux-module-build/vmlinux && \
+    drifuzz/scripts/generate_filter_pc.py --vmlinux ${REPO}/Drifuzz/linux-module-build/vmlinux && \
 panda/scripts/install_ubuntu.sh)
 (cd ${REPO}/Drifuzz && \
 ./compile.sh --build-panda -j ${NP})
