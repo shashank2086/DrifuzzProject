@@ -19,7 +19,7 @@ pip3 install sysv_ipc lz4 mmh3 psutil shortuuid tempdir pexpect intervaltree
 git clone --depth 1 https://github.com/buszk/drifuzz-concolic.git ${REPO}/drifuzz-concolic
 
 # Build Linux kernel
-git clone --branch dev --depth 1 https://github.com/shashank2086/Drifuzz.git ${REPO}/Drifuzz
+git clone --depth 1 https://github.com/shashank2086/Drifuzz.git ${REPO}/Drifuzz
 (cd ${REPO}/Drifuzz && \
 ./compile.sh --build-linux -j ${NP})
 
